@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  abv_title: MyString
+  paragraph1: MyString
+  paragraph2: MyString
+  paragraph3: MyString
+  paragraph4: MyString
+
+two:
+  title: MyString
+  abv_title: MyString
+  paragraph1: MyString
+  paragraph2: MyString
+  paragraph3: MyString
+  paragraph4: MyString

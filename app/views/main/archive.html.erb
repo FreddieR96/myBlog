@@ -1,0 +1,9 @@
+Archive:
+<ul>
+<% @articles.each do |f| %>
+<li><%= link_to article_path(f.abv_title) do %>
+<%= f.title %>
+<% end %>
+</li>
+<% end %>
+</ul>

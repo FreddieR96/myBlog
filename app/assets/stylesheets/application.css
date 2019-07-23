@@ -1,0 +1,229 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+	margin: 0px 0px 0px 0px;
+	background-color: #fffff0;
+	font-family: Arial, sans-serif;
+}
+#titlebox {
+	font-size: 2.3em;
+	color: white;
+	font-family: Verdana, sans-serif;
+	padding-left: 10%;
+	height: 10vh;
+	overflow: hidden;
+	background-image: linear-gradient(to bottom, #0000e6, #0000e6 80%, #b3f0ff 80%, #b3f0ff);
+}
+#contentbox {
+	min-height: 80vh;
+}
+#bottom-box {
+	overflow: hidden;
+	height: 10vh;
+	background-image: linear-gradient(to top, #990099, #990099 90%, #ff66d9 90%, #ff66d9);
+}
+.showpic {
+	display: block;
+	height: 190px;
+	width: 225px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+#showdp {
+	height: 250px;
+	width: 375px;
+	margin-bottom: 50px;
+}
+#articlebox {
+	margin-top: 20px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#title {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 45px;
+}
+
+#mainlayout {
+	height: 78vh;
+	width: 90vw;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#bigcolumn {
+	display: block;
+	margin-top: 1.5%;
+	height: 90%;
+	width: 65%;
+	float: left;
+}
+
+#smallcolumn {
+	margin-top: 1.5%;
+	height: 90%;
+	width: 30%;
+	float: right;
+}
+
+
+.fillerbar {
+	height: 5%;
+}
+.textbox {
+	height: 30%;
+	overflow: hidden;
+}
+
+.filler {
+	height: 10%;
+}
+
+.picbox {
+	height: 60%;
+}
+.displaypic {
+	height: 100%;
+	width: 40%;
+	margin-left: 30%;
+	
+}
+.big .displaypic {
+	width: 25%;
+	margin-left: 37.5%;
+}
+.big {
+	height: 50%;
+	font-size: 1.6em;
+}
+#divider {
+	height: 45%;
+	width: 5%;
+	float: left;
+}
+.medium {
+	height: 45%;
+	width: 47.5%;
+	float: left;
+	font-size: 1.4em;
+}
+.small {
+	height: 15%;
+	width: 100%;
+	overflow: hidden;
+	font-size: 1.6em;
+}
+.titletext {
+	margin-left: 20%;
+	color: #0000e6;
+}
+.smallcolfiller {
+	height: 8%;
+}
+
+.story {
+	background-color: hsla(60, 23%, 95%, 0.8);
+	font-weight: 600;
+} 
+
+a:link, a:visited {
+	text-decoration-line: none;
+	color: inherit;
+}
+#addemailform {
+	margin-left: 30%;
+	margin-top: 2%;
+}
+.deletebutton {
+	width: 40px;
+	font-size: 12px;
+	background-color: red;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	padding: 3px;
+}
+.big .textbox, .medium .textbox {
+	text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+	#bottom-box {
+	display: none;	
+	}
+	.medium {
+	height: 50%;
+	width: 100%;
+	font-size: 1.6em;
+	float: none;
+	text-align: center;
+	}
+	.small {
+	height: 50%;
+	width: 100%;
+	float: none;
+	text-align: center;
+	}
+	#contentbox {
+	margin-top: 3%;	
+	}
+	.fillerbar {
+	display: none;	
+	}
+	#divider {
+	display: none;	
+	}
+	.filler {
+	display: none;	
+	}
+	.picbox {
+	display: none;	
+	}
+	.smallcolfiller {
+	display: none;	
+	}
+	.textbox {
+	height: 100%;	
+	}
+	#bigcolumn {
+	float: none;
+	display: initial;
+	}
+	#smallcolumn {
+	margin-top: 0%;
+	height: 90%;
+	width: 100%;
+	float: none;
+	}
+	.story {
+	margin-bottom: 3%;	
+	}
+	#showdp {
+	width: 220px;
+	height: 150px;
+	}
+	#title {
+	margin-left: 20%;
+	}
+}

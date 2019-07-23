@@ -1,0 +1,43 @@
+<div id = "mainlayout">
+<div id = "bigcolumn">
+
+<% unless @lastarticle.blank? %>
+<%= render partial: "main/display_large", object: @lastarticle %>
+<% else %>
+<div class = "story big">
+<span class = "fillertext">Frodho Blog</span>
+</div>
+<% end %>
+<div class = "fillerbar"></div>
+<% unless @twoarticles[0].blank? %>
+<%= render partial: "main/display_medium", object: @twoarticles[0] %>
+<% else %>
+<div class = "story medium">
+<span class = "fillertext">Frodho Blog</span>
+</div>
+<% end %>
+<div id = "divider"></div>
+<% unless @twoarticles[1].blank? %>
+<%= render partial: "main/display_medium", object: @twoarticles[1] %>
+<% else %>
+<div class = "story medium">
+<span class = "fillertext">Frodho Blog</span>
+</div>
+<% end %>
+</div>
+<div id = "smallcolumn">
+<% [0,1,2,3].each do |m| %>
+<% unless @fourarticles[m].blank? %>
+	<%= render partial: "main/display_small", object: @fourarticles[m] %>
+<% else %>
+	<div class = "story small">
+	<span class = "fillertext">Frodho Blog</span>
+	</div>
+<% end %>
+<% @columnstop += 1 %>
+<% unless @columnstop == 4 %>
+<div class = "smallcolfiller"></div>
+<% end %>
+<% end %>
+</div>
+</div>

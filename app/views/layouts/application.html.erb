@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Frodho Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+	<header id = "titlebox"><%= link_to "Frodho Blog", root_path %></header>
+	<main id = "contentbox">
+    <%= yield %>
+	</main>
+	<div id = "bottom-box">
+	<%= form_with url: addemail_path, method: :post, id: "addemailform" do |f| %>
+	<%= f.label :email, "Be a part of our mailing list: " %>
+	<%= f.text_field :emailstring, id: "addemailinput" %>
+	<div id = "responsebox">Enter your email address to put it on our mailing list. Enter it again to take it off.</div>
+	<% end %>
+	</div>
+	    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+Hello World!<br>
+<% @articles.each do |m| %>
+
+<div id = "article-<%= m.id %>">
+<%= link_to edit_article_path(m.abv_title) do %>
+<%= m.title %>
+<% end %>
+	
+<%= link_to destroy_article_path(m.id), remote: true do %>
+<div class = "deletebutton">Delete</div>
+<% end %>
+<br>
+</div>
+<% end %>

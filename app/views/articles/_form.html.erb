@@ -1,0 +1,38 @@
+<%= form_for @article do |f| %>
+
+<% if @article.errors.any? %>
+	<% @article.errors.full_messages.each do |msg| %>
+	<%= msg %><br>
+	<% end %>
+<% end %>
+
+<%= f.label :title, "Article title" %>
+<%= f.text_field :title %><br><br>
+
+<%= f.label :abv_title, "This will go in the article URL" %>
+<%= f.text_field :abv_title %><br><br>
+
+<%= f.label :paragraph1, "Paragraph 1" %>
+<%= f.text_area :paragraph1 %><br><br>
+
+<%= f.label :paragraph2, "Paragraph 2" %>
+<%= f.text_area :paragraph2 %><br><br>
+
+<%= f.label :paragraph3, "Paragraph 3" %>
+<%= f.text_area :paragraph3 %><br><br>
+
+<%= f.label :paragraph4, "Paragraph 4" %>
+<%= f.text_area :paragraph4 %><br><br>
+
+<%= f.label :display_pic, "The display picture" %>
+<%= f.file_field :display_pic %><br><br>
+
+<%= f.label :pic1, "Up to 2 pictures for the article" %>
+<%= f.file_field :pic1 %><br><br>
+
+<%= f.label :pic2, "Up to 2 pictures for the article" %>
+<%= f.file_field :pic2 %>
+
+<%= f.submit "Add article" %>
+
+<% end %>

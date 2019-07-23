@@ -1,0 +1,13 @@
+/* <% unless @lastarticle.blank? %>
+<%= render partial: "articles/display_large", object: @lastarticle %>
+<% else %>
+<%= "There's nothing here" %>
+<% end %> */
+
+.inner {
+	margin-top: 30px;
+	width: 90%;
+	height: 90%;
+	margin: auto auto auto auto;
+}
+
