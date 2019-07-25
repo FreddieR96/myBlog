@@ -1,24 +1,5 @@
-# README
+# My Blog Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Here is the code for [my blog website.](http://www.frodho-blog.com)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Sensitive information has been removed so it can't be run locally from the code here.
